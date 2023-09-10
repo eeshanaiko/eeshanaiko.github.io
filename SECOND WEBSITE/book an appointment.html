@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://img.freepik.com/free-photo/top-view-nails-care-elements-assortment_23-2148697097.jpg?w=1060&t=st=1694259141~exp=1694259741~hmac=1f0bd9001d4183edd28fc0260c9581889430daf5b91b2e2cfd17b678a30c2dde);
+    background-color: #FFEEF4;
+    background-position: center;
+    background-size: auto;
+
+ 
+}
+#form{
+    background-color: #f8a3a3;
+    height:400px;
+    width:800px;
+    margin: auto;
+    margin-top: 100px;
+    opacity:0.7;
+}
+#first-group{
+    border:none;
+    width:400px;
+    margin-top: 38px;
+    position: absolute;
+}
+#content{
+    border: 1px solid #fff;
+    margin:10px;
+    margin-left: 8px;
+    padding:5px;
+}
+#content #input-group{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left:8px;
+    width:300px;
+    color:#fff;
+}
+::placeholder{
+    color:#fff;
+}
+.fa{
+    display:inline-block;
+    color:red;
+    border-right:1px solid #fff;
+    padding:8px;
+    margin-left: 8px;
+}
+#second-group{
+    border:none;
+    width:400px;
+    margin-top: 55px;
+    margin-left:400px;
+}
+#submit-btn{
+    margin-top: 30px;
+    margin-left: 600px;
+    background: transparent;
+    color:#fff;
+    width:150px;
+    border:1px solid red;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+}
+
+#submit-btn:hover {
+    background-color: #ff8383;
+    color: white;
+    cursor: pointer;
+}
+
+a.btn {
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
+}
+
+ a.btn {
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #fff; 
+    background-color: #0c0b0b; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+ a.btn:hover {
+    background-color: #FFBFBF; 
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text-white text-center">Book An Appointment</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Date">
+                    </div>
+
+                   
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="time">
+                    </div>
+
+                   
+            
+                </div>
+
+                <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+
+            </div>
+        </form>
+    </div>
+    
+    
+    <div class="text-center mt-5">
+        <a href="index.html" class="btn btn">Back to Home</a>
+    
+    
+    
+    
+    <script>
+        // JavaScript for form validation
+        document.getElementById('booking-form').addEventListener('submit', function (event) {
+            const firstName = document.getElementById('first-name').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+
+            if (!firstName || !phone || !date) {
+                event.preventDefault(); // Prevent form submission if any required field is empty
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>

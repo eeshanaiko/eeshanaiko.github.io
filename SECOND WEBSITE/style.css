@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&family=Noto+Serif:wght@300;400;500&family=Oswald:wght@500&display=swap');
+
+
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #000000;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: Oswald, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,n3,h4,h5,h6,
+.display-4 {
+   color: var(--dark)
+   font-weight: 700;
+}
+
+
+
+}
+
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+
+.navbar logo {
+    width: 160px;
+}
+
+body .navbar {
+    background-color: transparent;
+}
+
+
+
+.navbar.nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+
+}
+
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: ;
+    z-index: -1;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+span{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.section-head{
+    margin-bottom: 60px;
+}
+
+/* style.css */
+.custom-btn {
+    background-color:#FFBFBF;
+    border: #FFBFBF;
+}
+
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  #footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+  }
+  #footer h1 span{
+    color: #008080;
+  }
+  .social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .social-links i:hover{
+    background:#FFBFBF;
+  }
+
+
+  
+footer {
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
+}
+
+footer a.btn {
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #fff; 
+    background-color: #0c0b0b; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+footer a.btn:hover {
+    background-color: #FFBFBF; 
+}
+
+
+
+
+
+
+
+
+
+
